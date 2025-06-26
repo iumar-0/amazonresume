@@ -5,7 +5,474 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amzon</title>
-    <link rel="stylesheet" href="Style.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            border: border-box;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            background-color: #0f1111;
+            height: 60px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+        }
+
+        /* Amazon logo */
+        .div1,
+        .div2,
+        .div3 {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-logo {
+            height: 50px;
+            width: 100px;
+            margin-left: 11px;
+            padding: 3.5px;
+        }
+
+        .logo {
+            background-image: url(amazon_logo.png);
+            background-size: cover;
+            height: 45px;
+            width: 100%;
+
+        }
+
+        /* Border for all hover Navigation Bar */
+        .border {
+            border: 1px solid transparent;
+            border-radius: 3px;
+            padding: 2.5px;
+
+        }
+
+        .border:hover {
+            border-color: white;
+        }
+
+
+        /* Location Divs */
+
+        .location-bar {
+            padding: 3px;
+        }
+
+        .inner-div-location {
+            padding-right: 9px;
+        }
+
+        #location-icon-id {
+            height: 30px;
+            width: 40px;
+            padding-top: 10px;
+        }
+
+        #location-text {
+            padding-top: 10px;
+            font-size: 0.6rem;
+            color: #CCCCCC;
+        }
+
+        #location-place {
+            font-size: 0.9rem;
+        }
+
+        /* Navgiation Search */
+        .inner-div-search {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            display: flex;
+            justify-content: space-evenly;
+            width: 40rem
+        }
+
+        .category-dropdown {
+            height: 35px;
+            width: 45px;
+
+            background-color: rgb(250, 238, 238);
+            border-top-left-radius: 4px;
+            border-bottom-left-radius: 4px;
+            border: 0;
+            text-align: center;
+        }
+
+        .input-search {
+            height: 35px;
+            width: 100%;
+            font-size: small;
+            border: 0;
+
+        }
+
+        .search-icon {
+            height: 35px;
+            width: 45px;
+            background-color: #ffa41c;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 4px;
+            border-left: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        /* second div navigations */
+        .div3 {
+            width: 23rem;
+            display: flex;
+            justify-content: space-between;
+            padding-left: 1.7rem;
+            padding-right: 10px;
+        }
+
+        /* Language lists */
+        .inner-div-language {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .america-flag-image {
+            height: 1.4rem;
+            width: 1.9rem;
+            background-image: url(americaflag.png);
+            background-size: cover;
+        }
+
+        .language-name {
+            color: #ffffff;
+            width: rem;
+            height: 1.1rem;
+            font-size: 0.6;
+            margin-left: 6px;
+        }
+
+        .language-change-button {
+            border: none;
+            background-color: none;
+            background: #0f1111;
+            color: gray;
+            font-size: 0.45rem;
+        }
+
+        /* User name settings */
+        .link-account-div {
+            padding: 2px;
+        }
+
+        #account-link {
+            text-decoration: none;
+        }
+
+        .user-name-des-div {
+            color: rgb(201, 195, 195);
+            text-decoration: none;
+            font-size: 0.8rem;
+
+        }
+
+        .account-details {
+            color: white;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .return-word {
+            color: rgb(201, 195, 195);
+            font-size: 0.8rem;
+        }
+
+        .order-word {
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        /* Cart icon and text */
+        .cart-div {
+            display: flex;
+        }
+
+        .cart-icon-div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50px;
+            width: 25px;
+        }
+
+        .cart-icon {
+            fill: white;
+            height: 38px;
+            width: 26px;
+        }
+
+        .cart-text {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 15px;
+        }
+
+        /* Panel link */
+        .panel {
+            display: flex;
+            background-color: #222f3d;
+            height: 39px;
+            padding-left: 9px;
+        }
+
+        .panelall {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .linkpanel {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .menu-icon-panel {
+            fill: rgb(255, 255, 255);
+            height: 1.3rem;
+            width: 1.7rem;
+        }
+
+        .menu-text {
+            color: rgb(255, 255, 255);
+            font-size: 15px;
+            padding-left: 2px;
+            padding-right: 20px;
+        }
+
+        .menu-options {
+            display: flex;
+
+            align-items: center;
+        }
+
+        .dealslink {
+            text-decoration: none;
+            color: #fff;
+            padding-left: 20px;
+            font-size: 14px;
+
+        }
+
+        /* Main Section  */
+
+        /* Hero Section */
+
+        .hero-sec {
+            background-image: url(hero_image.jpg);
+            background-size: cover;
+            height: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+
+        .hero-text {
+            background-color: white;
+            color: black;
+            font-size: 14px;
+            height: 20px;
+            width: 80%;
+            margin-bottom: 20px;
+            padding: 12px;
+        }
+
+        /* Section page */
+        .main-section-link {
+            color: rgb(26, 128, 244);
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .section-page {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px 20px 20px 20px;
+            background-color: #e2e7e6;
+        }
+
+        .boxmodel {
+            height: 400px;
+            width: 280px;
+            background-color: white;
+            /* border: 2px black solid; */
+            margin: 10px;
+
+        }
+
+        .boxmodel:hover {
+
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+            /* X-offset, Y-offset, blur, color */
+            /* border-radius: 8px; */
+        }
+
+        .inside-boxmodel {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .heading-boxmodel {
+            padding: 18px;
+        }
+
+        .box1-image-div {
+            width: 235px;
+            height: 250px;
+            padding: 0 18px 18px 18px;
+        }
+
+        .box1-image {
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+        }
+
+        .text-size-boxmodel {
+            padding-left: 20px;
+        }
+
+        .text-size-boxmodel:hover {
+            color: blue;
+            cursor: pointer;
+        }
+
+        .padding-text-forlarge-image {
+            padding-top: 10px;
+        }
+
+        /* Multiple images div */
+        .multiple-images-div {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .multiple-image-div-1 {
+            padding: 0 18px 20px 18px;
+            display: flex;
+            direction: row;
+        }
+
+        .multiple-images-size {
+            width: 120px;
+            height: 95px;
+            background-size: cover;
+            padding-right: 5px;
+        }
+
+        .text-formultiple-image {
+            font-size: 12px;
+        }
+
+        /* Sign in Div */
+        .sign-in-div {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+        .div-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 13px;
+            margin-bottom: 7px;
+        }
+
+        .sign-in-button {
+            height: 28px;
+            width: 190px;
+            background-color: #ffce12;
+            border-radius: 25px;
+            border: none;
+        }
+
+        .sign-in-button:hover {
+            background-color: #f9d64b;
+        }
+
+        /* Footer */
+
+
+
+        .div-backto-top {
+            background-color: #37475A;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 14px;
+
+            text-decoration: none;
+            color: white;
+        }
+
+        .div-backto-top:hover {
+            background-color: #4d5f76;
+        }
+
+        .footer-details-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
+
+        .link1 {
+            /* border-color: blue;
+    border: 3px solid; */
+            height: 310px;
+            width: 140px;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .link-heading {
+            font-size: 15px;
+            color: #ffffff;
+            padding: 5px 0px 7px 0;
+            font-weight: bold;
+
+        }
+
+        .link {
+            font-size: 12.5px;
+            color: #dddddd;
+            text-decoration: none;
+            padding: 7px 0px 7px 0px;
+        }
+
+        .link:hover {
+            text-decoration: underline;
+        }
+
+        .link-li {
+            margin: 5px 0px 5px 0px;
+        }
+    </style>
 </head>
 
 <body>
