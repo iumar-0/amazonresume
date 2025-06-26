@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amzon</title>
+    <link rel="stylesheet" href="amzonstyle.css">
+</head>
+
+<body>
+    <!-- Header Of Amazon -->
+    <header>
+        <div class="navbar">
+
+            <div class="div1">
+                <!-- Logo Amazon -->
+                <div class="nav-logo">
+                    <div class="logo border">
+                    </div>
+                </div>
+
+
+                <!-- Location Nav Bar -->
+                <div class="location-bar">
+                    <div style="display: flex;" class=" inner-div-location border">
+
+                        <!-- Location Icon -->
+                        <div class="location-icon">
+                            <img src="location-icon.svg" alt="" id="location-icon-id">
+                        </div>
+
+                        <!-- Location Text -->
+                        <div id="location-text-place">
+                            <p id="location-text">Deliver to</p>
+                            <h4 id="location-place">Pakistan</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Search Navigation -->
+            <div>
+
+                <div style="display: flex;" class="inner-div-search">
+
+                    <select name="Category" class="category-dropdown">
+
+                        <option value="All">All</option>
+                        <option value="Kitchen">Kitchen</option>
+                        <option value="Electronics">Electronics</option>
+                    </select>
+                    <input type="text" placeholder=" Search Amazon" class="input-search">
+                    <div class="search-icon">
+                        <img src="search-icon.svg" alt="" style="height: 1.8rem;">
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Last four Options -->
+
+            <div class="div3">
+                <!-- Language change -->
+                <div style="display: flex; justify-content: center;align-items: center;">
+                    <div class="inner-div-language border">
+                        <span class="america-flag-image"></span>
+                        <div class="language-name">EN</div>
+                    </div>
+
+                    <button class="language-change-button">▼ </button>
+
+                </div>
+
+                <!-- User account details -->
+                <div class="link-account-div border">
+                    <a href="http://www.Amazon.com" id="account-link">
+                        <div class="user-name-des-div">
+                            <span class="user-name-des-span-child">Hello, umar</span>
+                        </div>
+                        <span class="account-details">Accounts and List</span>
+                    </a>
+                    <button class="language-change-button">▼ </button>
+                </div>
+
+                <!-- Return Orders -->
+                <div class="return-order-div border">
+                    <a href="http://www.Amazon.com" style="text-decoration: none;">
+                        <div>
+                            <span class="return-word">Return</span>
+                        </div>
+                        <span class="order-word">& Orders</span>
+                    </a>
+                </div>
+
+                <div class="cart-div border">
+                    <div class="cart-icon-div">
+                        <svg class="cart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                            <path
+                                d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+                        </svg>
+                    </div>
+                    <div class="cart-text">Cart</div>
+                </div>
+
+
+            </div>
+        </div>
+
+        <!-- Panel div -->
+        <div class="panel">
+            <!-- Menu Div click -->
+            <div class="panelall">
+                <a href="http://www.Amazon.com" style="text-decoration: none;" class="linkpanel">
+                    <svg class="menu-icon-panel" xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 448 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+                        <path
+                            d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z" />
+                    </svg>
+
+                    <span class="menu-text">All</span>
+                </a>
+            </div>
+
+            <!-- menu futher options -->
+            <div class="menu-options">
+
+                <a href="http://www.Amazon.com" class="dealslink">Today's Deal</a>
+                <a href="http://www.Amazon.com" class="dealslink">Customer Service</a>
+                <a href="http://www.Amazon.com" class="dealslink">Registry</a>
+                <a href="http://www.Amazon.com" class="dealslink">Gift Cards</a>
+                <a href="http://www.Amazon.com" class="dealslink">Sell</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Part of Amazon -->
+    <main>
+        <!-- Hero Section -->
+        <div class="hero-sec">
+            <div class="hero-text">
+                <p style="text-align: center;">You are on Amazon.com. You can also shop on Amazon India for millions of
+                    Products with fast local
+                    delivery. <a href="http://www.Amazon.in" class="main-section-link">Click here to go on Amazon.in</a>
+                </p>
+            </div>
+        </div>
+
+        <!-- Section page -->
+        <div class="section-page">
+
+            <!-- Large image -->
+            <div class="boxmodel">
+
+                <div class="inside-boxmodel">
+
+                    <h3 class="heading-boxmodel">Health & Personal Care </h3>
+                    <div class="box1-image-div">
+                        <img src="box1_image.jpg" alt="" class="box1-image">
+
+                    </div>
+                    <p class="text-size-boxmodel main-section-link padding-text-forlarge-image">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Large image -->
+            <div class="boxmodel">
+
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Electronics</h3>
+                    <div class="box1-image-div">
+                        <img src="box4_image.jpg" alt="" class="box1-image">
+                    </div>
+                    <p class="text-size-boxmodel main-section-link padding-text-forlarge-image">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Large image -->
+            <div class="boxmodel">
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Washroom Products</h3>
+                    <div class="box1-image-div">
+                        <img src="box2_image.jpg" alt="" class="box1-image">
+                    </div>
+                    <p class="text-size-boxmodel main-section-link padding-text-forlarge-image">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Large image -->
+            <div class="boxmodel">
+
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Makeup Accessories</h3>
+                    <div class="box1-image-div">
+                        <img src="box5_image.jpg" alt="" class="box1-image">
+                    </div>
+                    <p class="text-size-boxmodel main-section-link padding-text-forlarge-image">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Multiple Images -->
+            <div class="boxmodel">
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Score the top PCs & Accessories</h3>
+
+                    <div class="multiple-image-div">
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="desktop.jpg" alt="">
+                                <span class="text-formultiple-image">Desktop</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="laptop.jpg" alt="">
+                                <span class="text-formultiple-image">Laptop</span>
+                            </div>
+                        </div>
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="pcAccessories.jpg" alt="">
+                                <span class="text-formultiple-image">Accessories</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="harddrive.jpg" alt="">
+                                <span class="text-formultiple-image">HardDrive</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p class="text-size-boxmodel main-section-link">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Multiple Images  -->
+            <div class="boxmodel">
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Fashion trends you like</h3>
+
+                    <div class="multiple-image-div">
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="f1.jpg" alt="">
+                                <span class="text-formultiple-image">Dress</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="f2.jpg" alt="">
+                                <span class="text-formultiple-image">Knits</span>
+                            </div>
+                        </div>
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="f3.jpg" alt="">
+                                <span class="text-formultiple-image">Jackets</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="f4.jpg" alt="">
+                                <span class="text-formultiple-image">Jewelry</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p class="text-size-boxmodel main-section-link">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Multiple Images -->
+            <div class="boxmodel">
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Refresh your space</h3>
+
+                    <div class="multiple-image-div">
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="k1.jpg" alt="">
+                                <span class="text-formultiple-image">Dining</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="k2.jpg" alt="">
+                                <span class="text-formultiple-image">Home</span>
+                            </div>
+                        </div>
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="k3.jpg" alt="">
+                                <span class="text-formultiple-image">Kitchen</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="k4.jpg" alt="">
+                                <span class="text-formultiple-image">Health & Beauty</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p class="text-size-boxmodel main-section-link">see more</p>
+                </div>
+
+            </div>
+
+            <!-- Multiple Images -->
+            <div class="boxmodel">
+                <div class="inside-boxmodel">
+                    <h3 class="heading-boxmodel">Toys for all ages</h3>
+
+                    <div class="multiple-image-div">
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="t1.jpg" alt="">
+                                <span class="text-formultiple-image">Ride's on</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="t2.jpg.jpg" alt="">
+                                <span class="text-formultiple-image">Building & Construction</span>
+                            </div>
+                        </div>
+
+                        <div class="multiple-image-div-1">
+
+                            <div class="multiple-image1-div">
+                                <img class="multiple-image1 multiple-images-size" src="t3.jpg" alt="">
+                                <span class="text-formultiple-image">Dolls & Doll Houses</span>
+                            </div>
+
+                            <div class="multiple-image2-div">
+                                <img class="multiple-image2 multiple-images-size" src="t4.jpg" alt="">
+                                <span class="text-formultiple-image">Swimming pools</span>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <p class="text-size-boxmodel main-section-link">see more</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <hr style="margin: 20px; color: black; width: 100vw;">
+        <div class="sign-in-div">
+            <h2 style="text-align: center;">See personalized recommendations</h2>
+            <button class="sign-in-button">Sign in </button>
+        </div>
+
+        <hr style="margin: 20px; color: black; width: 100vw;">
+    </main>
+
+    <!-- Footer Of Amazon -->
+
+    <footer>
+        <div class="div-backto-top">
+            <span class="span-backto-top">Back to top</span>
+        </div>
+
+
+    </footer>
+
+</body>
+
+</html>
